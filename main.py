@@ -8,7 +8,7 @@ class hangman():
         self.start()
     def start(self):
         tries = int(input("How many tries you want ?"))
-        with open("src\wordfile.txt") as  word_file :
+        with open("wordfile.txt") as  word_file :
             word= word_file.read().splitlines()
             random_word=random.choice(word)
             self.game(random_word,tries)
